@@ -19,7 +19,7 @@ function calculateScore() {
 
   if (score >= 80) statusEl.innerText = "🔥 Hot Lead";
   else if (score >= 40) statusEl.innerText = "⚡ Warm Lead";
-  else statusEl.innerText = "❄ Cold Lead";
+  else statusEl.innerText = "❄️ Cold Lead";
 }
 
 [visits, emails, demos].forEach(slider => {

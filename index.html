@@ -2,103 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chirag Chhatbar | Growth & Marketing Analytics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <h1>Chirag Chhatbar</h1>
-  <p>Growth Analytics | Customer Insights | Revenue Optimization</p>
-  <p>Lead Scoring • Funnel Analytics • CRO • Lifecycle Strategy</p>
-</header>
+<div class="container">
+  <header>
+    <h1>Chirag Chhatbar</h1>
+    <p>Growth Analytics | Customer Insights | Revenue Optimization</p>
+    <p>Lead Scoring • Funnel Analytics • CRO • Lifecycle Strategy</p>
+  </header>
 
-<section>
-  <h2>Professional Summary</h2>
-  <p>
-    Strategic Growth and Marketing Analytics leader with 12+ years of experience
-    improving revenue performance through customer journey analysis, lead
-    scoring models, lifecycle optimization, and funnel diagnostics across
-    healthcare, technology, and B2B industries.
-  </p>
-</section>
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary-text">
+      Strategic Growth and Marketing Analytics leader with 12+ years of experience
+      improving revenue performance through customer journey analysis, lead
+      scoring models, lifecycle optimization, and funnel diagnostics across
+      healthcare, technology, and B2B industries.
+    </p>
+  </section>
 
-<section>
-  <h2>Core Skills</h2>
-  <div class="grid">
-    <div>Lead Scoring & Qualification Models</div>
-    <div>Funnel & Lifecycle Analytics</div>
-    <div>Conversion Rate Optimization (CRO)</div>
-    <div>A/B Testing & UX Analytics</div>
-    <div>Customer Segmentation & Targeting</div>
-    <div>SQL, Python, BigQuery</div>
-    <div>Tableau, Power BI, Looker</div>
-    <div>Google Analytics, Adobe Analytics</div>
-  </div>
-</section>
+  <section>
+    <h2>Core Skills</h2>
+    <div class="grid">
+      <div>Lead Scoring & Qualification Models</div>
+      <div>Funnel & Lifecycle Analytics</div>
+      <div>Conversion Rate Optimization (CRO)</div>
+      <div>A/B Testing & UX Analytics</div>
+      <div>Customer Segmentation & Targeting</div>
+      <div>SQL, Python, BigQuery</div>
+      <div>Tableau, Power BI, Looker</div>
+      <div>Google Analytics, Adobe Analytics</div>
+    </div>
+  </section>
 
-<section>
-  <h2>Business Impact</h2>
-  <ul>
-    <li>📈 Improved digital ROI by 28% and conversion rates by 18%</li>
-    <li>🎯 Increased MQL quality by 20% using lead scoring</li>
-    <li>💰 Reduced CAC by 15%</li>
-    <li>⚡ Automated reporting reducing manual effort by 35%</li>
-    <li>🔁 Improved retention by 25% via lifecycle programs</li>
-  </ul>
-</section>
+  <section>
+    <h2>Business Impact</h2>
+    <ul>
+      <li>📈 Improved digital ROI by 28% and conversion rates by 18%</li>
+      <li>🎯 Increased MQL quality by 20% using lead scoring</li>
+      <li>💰 Reduced CAC by 15%</li>
+      <li>⚡ Automated reporting reducing manual effort by 35%</li>
+      <li>🔍 Improved retention by 25% via lifecycle programs</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Experience Highlights</h2>
+  <section>
+    <h2>Experience Highlights</h2>
 
-  <h3>Providence Global Center – Manager, Marketing Analytics</h3>
-  <ul>
-    <li>Designed lead scoring rules using behavioral & intent signals</li>
-    <li>Built lifecycle dashboards linking lead score to revenue</li>
-    <li>Drove 18% lift in funnel conversion via UX optimization</li>
-  </ul>
+    <h3>Providence Global Center – Manager, Marketing Analytics</h3>
+    <ul>
+      <li>Designed lead scoring rules using behavioral & intent signals</li>
+      <li>Built lifecycle dashboards linking lead score to revenue</li>
+      <li>Drove 18% lift in funnel conversion via UX optimization</li>
+    </ul>
 
-  <h3>Salesforce – Sr Product Marketing Analyst</h3>
-  <ul>
-    <li>Built lead prioritization logic to improve SDR efficiency</li>
-    <li>Improved trial-to-paid conversions by 25%</li>
-    <li>Improved retention by 25% using lifecycle triggers</li>
-  </ul>
-</section>
+    <h3>Salesforce – Sr Product Marketing Analyst</h3>
+    <ul>
+      <li>Built lead prioritization logic to improve SDR efficiency</li>
+      <li>Improved trial-to-paid conversions by 25%</li>
+      <li>Improved retention by 25% using lifecycle triggers</li>
+    </ul>
+  </section>
 
-<!-- INTERACTIVE SECTION -->
-<section class="interactive">
-  <h2>Interactive Lead Scoring Simulator</h2>
-  <p>Adjust behavior signals and see how lead quality changes.</p>
+  <section class="interactive">
+    <h2>Interactive Lead Scoring Simulator</h2>
+    <p style="color: #4a5568; font-size: 1.1em;">Adjust behavior signals and see how lead quality changes in real-time.</p>
 
-  <div class="controls">
-    <label>Website Visits:
-      <input type="range" id="visits" min="0" max="20" value="5">
-      <span id="vVal">5</span>
-    </label>
+    <div class="controls">
+      <label>
+        Website Visits:
+        <div class="slider-container">
+          <input type="range" id="visits" min="0" max="20" value="5">
+          <span class="value-display" id="vVal">5</span>
+        </div>
+      </label>
 
-    <label>Email Opens:
-      <input type="range" id="emails" min="0" max="10" value="3">
-      <span id="eVal">3</span>
-    </label>
+      <label>
+        Email Opens:
+        <div class="slider-container">
+          <input type="range" id="emails" min="0" max="10" value="3">
+          <span class="value-display" id="eVal">3</span>
+        </div>
+      </label>
 
-    <label>Demo Requests:
-      <input type="range" id="demos" min="0" max="5" value="1">
-      <span id="dVal">1</span>
-    </label>
-  </div>
+      <label>
+        Demo Requests:
+        <div class="slider-container">
+          <input type="range" id="demos" min="0" max="5" value="1">
+          <span class="value-display" id="dVal">1</span>
+        </div>
+      </label>
+    </div>
 
-  <div class="score-box">
-    <h3>Lead Score</h3>
-    <p id="score">0</p>
-    <p id="status"></p>
-  </div>
-</section>
+    <div class="score-box">
+      <h3>Lead Score</h3>
+      <p id="score">0</p>
+      <p id="status"></p>
+    </div>
+  </section>
 
-<footer>
-  <p>Hyderabad, India | chirag2000@gmail.com | LinkedIn</p>
-</footer>
+  <footer>
+    <p style="font-size: 1.1em; margin-bottom: 10px;">Let's Connect</p>
+    <div class="contact-links">
+      <span class="location">Hyderabad, India</span>
+      <a href="mailto:chirag2000@gmail.com" class="email-link">chirag2000@gmail.com</a>
+      <a href="https://www.linkedin.com/in/chiragchhatbar" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn Profile</a>
+    </div>
+  </footer>
+</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
